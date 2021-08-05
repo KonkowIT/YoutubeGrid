@@ -8,7 +8,7 @@ First it is necessary to put values in this variables:
 * ```$gridColumns``` - determines number of grid columns
 
 * ```$ytLinks``` - list of Youtube videos id's 
-
+</br>
 <p align="center">
-  <img src="https://github.com/KonkowIT/YoutubeGrid/blob/main/img/grid.png" width="700"></br>
+  <img src="https://github.com/KonkowIT/YoutubeGrid/blob/main/img/grid.png" width="800"></br>
 </p>
