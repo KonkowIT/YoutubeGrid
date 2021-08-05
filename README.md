@@ -10,5 +10,5 @@ First it is necessary to put values in this variables:
 * ```$ytLinks``` - list of Youtube videos id's 
 
 <p align="center">
-  <img src="https://github.com/KonkowIT/YoutubeGrid/blob/main/img/grid.png" width="600"></br>
+  <img src="https://github.com/KonkowIT/YoutubeGrid/blob/main/img/grid.png" width="700"></br>
 </p>
