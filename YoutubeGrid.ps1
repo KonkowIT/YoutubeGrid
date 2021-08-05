@@ -1,20 +1,22 @@
-# ilosc rzedow
+# ROWS NUMBER
 $gridRows = 3
 
-# ilosc kolumn
+# COLUMNS NUMBER
 $gridColumns = 3
 
-# lista linkow do YT
+# YT VIDEO ID'S FROM YT LINK
+# eg. LINK: https://www.youtube.com/watch?v=abcde12345 ID: abcde12345
+
 $ytLinks = @(
-    "abc123",
-    "abc123",
-    "abc123",
-    "abc123"
-    "abc123",
-    "abc123",
-    "abc123",
-    "abc123",
-    "abc123"
+    "abcde12345",
+    "abcde12345",
+    "abcde12345",
+    "abcde12345",
+    "abcde12345",
+    "abcde12345",
+    "abcde12345",
+    "abcde12345",
+    "abcde12345"
 )
 
 # --------------------------------------------------------------------------
@@ -42,5 +44,5 @@ for ($i = 0; $i -lt $ytLinks.count; $i++) {
         }
     }
     
-    start-process "$env:ProgramFiles\Google\Chrome\Application\chrome.exe" -Argumentlist "--enable-extensions --app=`"data:text/html,<html><body><script>window.moveTo($posX,$posY);window.resizeTo($cellV,$cellH);window.location='https://www.youtube.com/watch?v=$($ytLinks[$i])';</script></body></html>`"" -Verbose
+    start-process "$(${env:ProgramFiles(x86)})\Google\Chrome\Application\chrome.exe" -Argumentlist "--enable-extensions --app=`"data:text/html,<html><body><script>window.moveTo($posX,$posY);window.resizeTo($cellV,$cellH);window.location='https://www.youtube.com/watch?v=$($ytLinks[$i])';</script></body></html>`"" -Verbose
 }
